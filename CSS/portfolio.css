@@ -62,6 +62,10 @@ body {
   align-items: center;
 }
 
+.header {
+  border-bottom: 1px solid #bbbbbb;
+}
+
 .logo-link {
   width: 145px;
   height: 31px;
@@ -203,8 +207,8 @@ body {
 .main-section-cards {
   width: 1170px;
   height: 1290px;
-  margin: 0 auto;
-  padding: 0px 170px;
+  margin: 0 auto 94px;
+  padding: 0;
 }
 
 .list-cards {
@@ -243,7 +247,7 @@ body {
   position: absolute;
   top: 0;
   transition: transform 1s ease;
-  width: 322px;
+  width: 100%;
 }
 
 .main-list-item:hover .overlay {

@@ -63,6 +63,10 @@ body {
   align-items: center;
 }
 
+.header {
+  border-bottom: 1px solid #bbbbbb;
+}
+
 .logo-link {
   width: 145px;
   height: 31px;
@@ -193,6 +197,16 @@ body {
     -moz-box-shadow: 1px 3px 18px 19px rgba(0, 0, 0, 0.75);
   }
 }
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+
 .modal {
   padding: 40px;
   width: 528px;
@@ -242,15 +256,18 @@ body {
 
 .modal-input:focus + .modal-svg {
   fill: #2196F3;
+  transition: 0.3s ease;
 }
 
 .modal-input:hover + .modal-svg {
   fill: #2196F3;
+  transition: 0.3s ease;
 }
 
 .modal-input:focus,
 .modal-input:hover {
   border-color: #2196F3;
+  transition: 0.3s ease;
 }
 
 .modal-bth-close {
@@ -275,6 +292,7 @@ body {
 .close-svg:hover,
 .close-svg:focus {
   fill: #2196F3;
+  transition: 0.3s ease;
 }
 
 .is-visible {
@@ -544,6 +562,7 @@ body {
 
 .icon-list-item:hover .people-icons {
   fill: #FFFFFF;
+  transition: 0.3s ease;
 }
 
 .icon-list-item {
