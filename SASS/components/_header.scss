@@ -1,4 +1,4 @@
-.nav-menu-left {
+.header__menuleft {
     display: flex;
     width: 520px;
     justify-content: space-between;
@@ -6,7 +6,7 @@
     padding: 24px 0px;
 }
 
-.nav-menu-right {
+.header__menuright {
     align-items: center;
     width: 333px;
     display: flex;
@@ -14,17 +14,17 @@
     padding: 0;
 }
 
-.icon-contact {
+.header-icon {
     fill: #757575;
     margin-right: 10px;
 }
 
-.contact-link:hover .icon-contact,
-.contact-link:focus .icon-contact {
+.header__contacts__link:hover .header-icon,
+.header__contacts__link:focus .header-icon {
     fill: #2196F3;
 }
 
-.header-contanier {
+.header__contanier {
     width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -32,11 +32,11 @@
     align-items: center;
 }
 
-.header{
+.header__page{
     border-bottom: 1px solid #bbbbbb;
 }
 
-.logo-link {
+.logo {
     width: 145px;
     height: 31px;
     font-family: 'Raleway', sans-serif;
@@ -50,11 +50,11 @@
 
 }
 
-.web {
+.logo__web {
     color: #2196F3;
 }
 
-.nav-list-item {
+.header__item {
     font-weight: 500;
     font-size: 14px;
     line-height: 1, 14;
@@ -62,7 +62,7 @@
     position: relative;
 }
 
-.nav-list {
+.header__list {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -74,17 +74,17 @@
     width: 281px;
 }
 
-.nav-list-link {
+.header__link {
     position: relative;
     color: #212121;
 }
 
-.nav-list-link:hover::after {
+.header__link:hover::after {
     width: 100%;
     transition: 0.2s ease;
 }
 
-.nav-list-link:after {
+.header__link:after {
     content: "";
     display: block;
     background-color: #2196F3;
@@ -95,14 +95,14 @@
     top: 45px;
 }
 
-.nav-list-link:hover {
+.header__link:hover {
     color: #2196F3;
     transition: 0.2s ease;
 }
 
 
 
-.contact-link {
+.header__contacts__link {
     text-decoration: none;
     color: #757575;
     font-weight: 500;
@@ -112,8 +112,8 @@
     list-style: none;
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.header__contacts__link:hover,
+.header__contacts__link:focus {
     color: #2196F3;
     transition: 0.2s ease;
 }

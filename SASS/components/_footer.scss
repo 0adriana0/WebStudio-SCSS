@@ -4,21 +4,21 @@
     height: 252px;
 }
 
-.footer-content {
+.footer__content {
     display: flex;
 }
 
-.footer-contact {
+.footer__contact {
     padding-bottom: 60px;
     margin-right: 70px;
 }
 
-.footer-contact-list {
+.footer__contact__list {
     list-style: none;
     padding: 0;
 }
 
-.footer-contact-list a {
+.footer__contact__list a {
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
@@ -27,7 +27,7 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-parag {
+.footer__parag {
     width: 231px;
     height: 21px;
     margin-top: 20px;
@@ -38,16 +38,16 @@
     color: #FFFFFF;
 }
 
-.footer-cont {
+.footer__contact__item {
     width: 231px;
     height: 21px;
 }
 
-.footer-cont:first-child {
+.footer__contact__item:first-child {
     margin: 9px 0px;
 }
 
-.footer-logo-link {
+.footer__logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -58,11 +58,11 @@
 }
 
 
-.footer-links {
+.footer__links {
     padding: 12px 0 0;
 }
 
-.footer-title {
+.footer__title {
     margin-bottom: 20px;
     color: #FFF;
     font-size: 14px;
@@ -72,12 +72,12 @@
     text-transform: uppercase;
 }
 
-.footer-list-links {
+.footer__list__links {
     display: flex;
     justify-content: space-between;
 }
 
-.footer-list-item {
+.footer__links__item {
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -87,28 +87,28 @@
     justify-content: center;
 }
 
-.footer-list-item:nth-child(-n+3) {
+.footer__links__item:nth-child(-n+3) {
     margin-right: 10px;
 }
 
-.link-footer-icon {
+.footer__link__icon {
     width: 20px;
     height: 20px;
 }
 
-.footer-list-item:hover,
-.footer-list-item:focus {
+.footer__links__item:hover,
+.footer__links__item:focus {
     background-color: #2196F3;
     transition: 0.3s ease-in;
 }
 
-.footer-svg {
+.footer__svg {
     width: 20px;
     height: 20px;
     fill: #FFFFFF;
 }
 
-.footer-label {
+.footer__label {
     color: #FFF;
     font-size: 14px;
     font-weight: 700;
@@ -116,7 +116,7 @@
     text-transform: uppercase;
 }
 
-.footer-email {
+.footer__email {
     width: 358px;
     height: 50px;
     border-radius: 4px;
@@ -129,7 +129,7 @@
 
 }
 
-.subscribe-bth {
+.subscribe__bth {
     width: 200px;
     height: 50px;
     border-radius: 4px;
@@ -163,18 +163,18 @@
     }
 }
 
-.footer-form {
+.footer__form {
     display: flex;
     align-items: flex-end;
 }
 
-.subscribe-svg {
+.subscribe__svg {
     margin-left: 10px;
     width: 24px;
     height: 24px;
 }
 
-.subscribe-list {
+.subscribe__list {
     display: flex;
 }
 

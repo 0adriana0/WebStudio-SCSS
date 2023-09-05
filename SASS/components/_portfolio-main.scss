@@ -1,10 +1,9 @@
-
 .thumb {
     width: 370px;
     height: 294px;
 }
 
-.main-title {
+.main__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -13,7 +12,7 @@
     margin: 20px 24px 0;
 }
 
-.main-parag {
+.main__parag {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
@@ -24,14 +23,14 @@
     margin: 0px 24px 20px;
 }
 
-.main-section-cards {
+.section__cards {
     width: 1170px;
     height: 1290px;
     margin: 0 auto 94px;
     padding: 0;
 }
 
-.list-cards {
+.cards__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -39,17 +38,17 @@
     list-style: none;
 }
 
-.main-list-item {
+.cards__item {
     border: 1px solid #EEEEEE;
     position: relative;
     overflow: hidden;
 }
 
-.main-list-item:nth-child(-n+6) {
+.cards__item:nth-child(-n+6) {
     margin-bottom: 30px;
 }
 
-.box-text {
+.box__text {
     color: #FFF;
     font-family: 'Roboto';
     font-size: 18px;
@@ -70,6 +69,6 @@
     width: 100%;
 }
 
-.main-list-item:hover .overlay {
+.cards__item:hover .overlay {
     transform: translatey(0);
 }
