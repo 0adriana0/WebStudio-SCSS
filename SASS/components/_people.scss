@@ -11,29 +11,29 @@
     margin: 0px 0px 50px;
 }
 
-.people__cards {
+.people-list__item {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.people__cards:nth-child(-n+3) {
+.people-list__item:nth-child(-n+3) {
     margin-right: 30px;
 }
 
-.people__list {
+.people-list {
     list-style: none;
     display: flex;
     justify-content: center;
 }
 
-.people__photo {
+.people-list__photo {
     background: #FFFFFF;
     width: 270px;
     height: 260px;
 }
 
-.people__name {
+.people-list__name {
     text-align: center;
     font-family: 'Roboto';
     font-weight: 500;
@@ -43,7 +43,7 @@
     margin: 30px 0px 10px;
 }
 
-.people__icons__list {
+.social-list {
     display: flex;
     justify-content: space-between;
     width: 206px;
@@ -52,16 +52,16 @@
 }
 
 
-.people__icons {
+.social-list__icons {
     fill: #AFB1B8;
 }
 
-.people__icon__item:hover .people__icons {
+.social-list__item:hover .social-list__icons {
     fill: #FFFFFF;
     transition: 0.3s ease;
 }
 
-.people__icon__item {
+.social-list__item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,8 +69,8 @@
     height: 44px;
 }
 
-.people__icon__item:hover,
-.people__icon__item:focus {
+.social-list__item:hover,
+.social-list__item:focus {
     border-radius: 50%;
     background-color: #2196F3;
     transition: background-color 0.2s ease-in;
@@ -81,7 +81,7 @@
 
 }
 
-.people__work {
+.people-list__work {
     text-align: center;
     font-family: 'Roboto';
     font-weight: 400;

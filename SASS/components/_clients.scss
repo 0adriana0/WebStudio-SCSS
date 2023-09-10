@@ -12,12 +12,12 @@
     margin-bottom: 50px;
 }
 
-.clients__list {
+.clients-list {
     display: flex;
     justify-content: space-between;
 }
 
-.clients__item {
+.clients-list__item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,18 +27,18 @@
     border: 1px solid #AFB1B8;
 }
 
-.clients__icon {
+.clients-list__icon {
     fill: #AFB1B8;
     width: 106px;
     height: 60px;
 }
 
-.clients__item:hover .clients__icon {
+.clients-list__item:hover .clients-list__icon {
     fill: #2196F3;
     transition: fill 0.3s ease-in;
 }
 
-.clients__item:hover {
+.clients-list__item:hover {
     border-color: #2196F3;
     transition: border-color 0.3s ease-in;
     box-shadow: 0px 0px 23px 2px rgba(0, 0, 0, 0.56);

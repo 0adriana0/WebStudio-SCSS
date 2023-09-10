@@ -4,21 +4,21 @@
     height: 252px;
 }
 
-.footer__content {
+.footer-content {
     display: flex;
 }
 
-.footer__contact {
+.footer-contact {
     padding-bottom: 60px;
     margin-right: 70px;
 }
 
-.footer__contact__list {
+.contact-list {
     list-style: none;
     padding: 0;
 }
 
-.footer__contact__list a {
+.contact-list a {
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
@@ -27,7 +27,7 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__parag {
+.footer-contact__parag {
     width: 231px;
     height: 21px;
     margin-top: 20px;
@@ -38,12 +38,12 @@
     color: #FFFFFF;
 }
 
-.footer__contact__item {
+.contact-list__item {
     width: 231px;
     height: 21px;
 }
 
-.footer__contact__item:first-child {
+.contact-list__item:first-child {
     margin: 9px 0px;
 }
 
@@ -58,11 +58,11 @@
 }
 
 
-.footer__links {
+.footer-links {
     padding: 12px 0 0;
 }
 
-.footer__title {
+.footer-links__title {
     margin-bottom: 20px;
     color: #FFF;
     font-size: 14px;
@@ -72,12 +72,12 @@
     text-transform: uppercase;
 }
 
-.footer__list__links {
+.list-links {
     display: flex;
     justify-content: space-between;
 }
 
-.footer__links__item {
+.list-links__item {
     width: 44px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -87,28 +87,28 @@
     justify-content: center;
 }
 
-.footer__links__item:nth-child(-n+3) {
+.list-links__item:nth-child(-n+3) {
     margin-right: 10px;
 }
 
-.footer__link__icon {
+.list-links__icon {
     width: 20px;
     height: 20px;
 }
 
-.footer__links__item:hover,
-.footer__links__item:focus {
+.list-links__item:hover,
+.list-links__item:focus {
     background-color: #2196F3;
     transition: 0.3s ease-in;
 }
 
-.footer__svg {
+.list-links__svg {
     width: 20px;
     height: 20px;
     fill: #FFFFFF;
 }
 
-.footer__label {
+.footer-form__label {
     color: #FFF;
     font-size: 14px;
     font-weight: 700;
@@ -116,7 +116,7 @@
     text-transform: uppercase;
 }
 
-.footer__email {
+.footer-form__email {
     width: 358px;
     height: 50px;
     border-radius: 4px;
@@ -129,7 +129,7 @@
 
 }
 
-.subscribe__bth {
+.form-list__bth {
     width: 200px;
     height: 50px;
     border-radius: 4px;
@@ -163,19 +163,15 @@
     }
 }
 
-.footer__form {
+.footer-form {
     display: flex;
     align-items: flex-end;
 }
 
-.subscribe__svg {
+.footer-form__svg {
     margin-left: 10px;
     width: 24px;
     height: 24px;
-}
-
-.subscribe__list {
-    display: flex;
 }
 
 .subscribe {

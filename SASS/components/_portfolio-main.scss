@@ -3,7 +3,7 @@
     height: 294px;
 }
 
-.main__title {
+.cards-list__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -12,7 +12,7 @@
     margin: 20px 24px 0;
 }
 
-.main__parag {
+.cards-list__parag {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
@@ -23,14 +23,14 @@
     margin: 0px 24px 20px;
 }
 
-.section__cards {
+.section-cards {
     width: 1170px;
     height: 1290px;
     margin: 0 auto 94px;
     padding: 0;
 }
 
-.cards__list {
+.cards-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -38,13 +38,13 @@
     list-style: none;
 }
 
-.cards__item {
+.cards-list__item {
     border: 1px solid #EEEEEE;
     position: relative;
     overflow: hidden;
 }
 
-.cards__item:nth-child(-n+6) {
+.cards-list__item:nth-child(-n+6) {
     margin-bottom: 30px;
 }
 
@@ -69,6 +69,6 @@
     width: 100%;
 }
 
-.cards__item:hover .overlay {
+.cards-list__item:hover .overlay {
     transform: translatey(0);
 }
