@@ -8,7 +8,7 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: getColor('primary');
     margin: 20px 24px 0;
 }
 
@@ -19,7 +19,7 @@
     letter-spacing: 0.03em;
     width: 322px;
     height: 30px;
-    color: #757575;
+    color: getColor('third');
     margin: 0px 24px 20px;
 }
 
@@ -34,12 +34,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: #FFFFFF;
+    background: getColor('secondary');
     list-style: none;
 }
 
 .cards-list__item {
-    border: 1px solid #EEEEEE;
+    border: 1px solid getColor('secondary');
     position: relative;
     overflow: hidden;
 }
@@ -49,7 +49,7 @@
 }
 
 .box__text {
-    color: #FFF;
+    color: getColor('secondary');
     font-family: 'Roboto';
     font-size: 18px;
     font-style: normal;
@@ -61,7 +61,7 @@
 
 .overlay {
     padding: 63px 24px;
-    background: rgba(33, 150, 243, 0.90);
+    background: getColor('seventh');
     transform: translatey(-101%);
     position: absolute;
     top: 0;

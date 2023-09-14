@@ -1,47 +1,46 @@
 .electricity {
     margin: 94px auto;
-}
 
-.electricity__title {
-    text-align: center;
-    margin: 0px 0px 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-
+    &__title{
+        text-align: center;
+        margin: 0px 0px 50px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+    }
 }
 
 .electricity-list {
     display: flex;
     margin: 0 auto;
-}
 
-.electricity-list__thumb {
-    width: 370px;
-    height: 294px;
-    position: relative;
-}
+    &__item:nth-child(-n+2) {
+        margin-right: 30px;
+    }
 
-.electricity-list__img {
-    object-position: 100%;
-}
+    &__thumb {
+        width: 370px;
+        height: 294px;
+        position: relative;
+    }
 
-.electricity-list__item:nth-child(-n+2) {
-    margin-right: 30px;
-}
+    &__img {
+        object-position: 100%;
+    }
 
-.electricity-list__label {
-    position: absolute;
-    width: 370px;
-    height: 70px;
-    bottom: 0;
-    text-align: center;
-    padding-top: 27px;
-    background: rgba(47, 48, 58, 0.80);
-    color: #FFF;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
+    &__label {
+        position: absolute;
+        width: 370px;
+        height: 70px;
+        bottom: 0;
+        text-align: center;
+        padding-top: 27px;
+        background: rgba(47, 48, 58, 0.80);
+        color: getColor('secondary');
+        font-family: 'Roboto';
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.42px;
+        text-transform: uppercase;
+    }
 }

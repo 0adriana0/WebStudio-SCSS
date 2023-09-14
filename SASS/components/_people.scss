@@ -1,46 +1,58 @@
 .people {
-    background-color: #F5F4FA;
+    background-color: getColor('fifth');
     padding: 94px;
+
+    &__title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        margin: 0px 0px 50px;
+    }
 }
 
-.people__title {
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    margin: 0px 0px 50px;
-}
 
-.people-list__item {
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
-
-.people-list__item:nth-child(-n+3) {
-    margin-right: 30px;
-}
 
 .people-list {
     list-style: none;
     display: flex;
     justify-content: center;
-}
 
-.people-list__photo {
-    background: #FFFFFF;
-    width: 270px;
-    height: 260px;
-}
+    &__item {
+        background: getColor('secondary');
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
 
-.people-list__name {
-    text-align: center;
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    margin: 30px 0px 10px;
+        &:nth-child(-n+3) {
+            margin-right: 30px;
+        }
+    }
+
+    &__photo {
+        background: getColor('secondary');
+        width: 270px;
+        height: 260px;
+    }
+
+    &__name {
+        text-align: center;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        margin: 30px 0px 10px;
+    }
+
+    &__work {
+        text-align: center;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        color: getColor('third');
+    }
 }
 
 .social-list {
@@ -49,44 +61,31 @@
     width: 206px;
     margin: 16px auto 30px;
     padding: 0px;
-}
 
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
 
-.social-list__icons {
-    fill: #AFB1B8;
-}
+        &__item:hover, &:focus {
+            border-radius: 50%;
+            background-color: getColor('hover');
+            transition: background-color 0.2s ease-in;
+            box-shadow: 0px 0px 23px 2px rgba(0, 0, 0, 0.56);
+            -webkit-box-shadow: 0px 0px 23px 2px rgba(0, 0, 0, 0.56);
+            -moz-box-shadow: 0px 0px 23px 2px rgba(0, 0, 0, 0.56);
+            transition: box-shadow 0.2s ease-in;
+        }
+    }
 
-.social-list__item:hover .social-list__icons {
-    fill: #FFFFFF;
-    transition: 0.3s ease;
-}
+    &__icons {
+        fill: getColor('fourth');
+    }
 
-.social-list__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-}
-
-.social-list__item:hover,
-.social-list__item:focus {
-    border-radius: 50%;
-    background-color: #2196F3;
-    transition: background-color 0.2s ease-in;
-    box-shadow: 0px 0px 23px 2px rgba(0, 0, 0, 0.56);
-    -webkit-box-shadow: 0px 0px 23px 2px rgba(0, 0, 0, 0.56);
-    -moz-box-shadow: 0px 0px 23px 2px rgba(0, 0, 0, 0.56);
-    transition: box-shadow 0.2s ease-in;
-
-}
-
-.people-list__work {
-    text-align: center;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;
-    letter-spacing: 0.03em;
-    color: #757575;
+    &__item:hover &__icons {
+        fill: getColor('secondary');
+        transition: 0.3s ease;
+    }
 }
