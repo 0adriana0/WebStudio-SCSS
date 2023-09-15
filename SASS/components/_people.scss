@@ -36,7 +36,7 @@
 
     &__name {
         text-align: center;
-        font-family: 'Roboto';
+        font-family: getFonts('Roboto-font');
         font-weight: 500;
         font-size: 16px;
         line-height: 1.18;
@@ -46,7 +46,7 @@
 
     &__work {
         text-align: center;
-        font-family: 'Roboto';
+        font-family: getFonts('Roboto-font');
         font-weight: 400;
         font-size: 16px;
         line-height: 1.18;

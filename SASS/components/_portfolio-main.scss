@@ -50,7 +50,7 @@
 
 .box__text {
     color: getColor('secondary');
-    font-family: 'Roboto';
+    font-family: getFonts('Roboto-font');
     font-size: 18px;
     font-style: normal;
     font-weight: 400;

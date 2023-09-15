@@ -4,7 +4,7 @@
     height: 252px;
 
     &__logo {
-        font-family: 'Raleway', sans-serif;
+        font-family: getFonts('Raleway-font');
         font-weight: 700;
         font-size: 26px;
         line-height: 1.19;

@@ -18,8 +18,8 @@ $colors:(
 }
 
 $fonts:(
-    'Roboto-font': 'Roboto',
-    'Raleway-font': 'Raleway',
+    'Roboto-font':#{'Roboto', sans-serif},
+    'Raleway-font':#{'Raleway', sans-serif},
 );
 
 @function getFonts($key) {

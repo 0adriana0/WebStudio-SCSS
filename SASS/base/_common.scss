@@ -20,7 +20,7 @@ use {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: getFonts('Roboto-font');
 }
 
 
