@@ -486,6 +486,7 @@ body {
   padding: 0px;
 }
 .social-list__item {
+  justify-content: center;
   width: 44px;
   height: 44px;
 }
