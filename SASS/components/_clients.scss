@@ -4,10 +4,8 @@
     &__title {
         color: getColor('primary');
         text-align: center;
-        font-size: 36px;
         font-style: normal;
-        font-weight: 700;
-        letter-spacing: 1.08px;
+        @include font(700, 36px, normal, 1.08px);
         margin-bottom: 50px;
     }
 }
@@ -15,12 +13,10 @@
 
 
 .clients-list {
-    display: flex;
-    justify-content: space-between;
+    @extend %flex;
 
     &__item {
-        display: flex;
-        align-items: center;
+        @extend %flex;
         justify-content: center;
         width: 170px;
         height: 92px;

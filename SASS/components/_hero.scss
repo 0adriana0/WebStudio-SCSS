@@ -2,16 +2,11 @@
     background-color: getColor('background');
     padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../Image/Img.jpg");
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover;
+    @extend %background-img;
 
     &__title{
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
+        @include font(900, 44px, 1.36, 0.06em);
         text-align: center;
-        letter-spacing: 0.06em;
         text-transform: uppercase;
         color: getColor('secondary');
         margin-bottom: 30px;
@@ -19,17 +14,14 @@
 
     &__btn{
         margin: 0 auto;
-        display: block;
+        @extend %flex;
+        justify-content: center;
         width: 216px;
         height: 50px;
         background-color: getColor('hover');
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.88;
-        text-align: center;
-        letter-spacing: 0.06em;
+        @include font(700, 16px, 1.88, 0.06em);
         color: getColor('secondary');
         cursor: pointer;
         animation: herobth 1s ease-in 500ms infinite alternate;
@@ -106,10 +98,7 @@
     &__text{
         margin: 20px 6px 30px 6px;
         color: getColor('third');
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.42px;
+        @include font(400, 14px, 1.14, 0.02em);
     }
 
     &__checkbox{
@@ -120,11 +109,8 @@
 
     &__link{
         color: getColor('hover');
-        font-size: 14px;
         font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0.42px;
+        @include font(400, 14px, 24px, 0.42px);
         text-decoration-line: underline;
     }
 
@@ -137,10 +123,7 @@
         box-shadow: 0px 4px 4px 0px getColor('backdrop');
         color: getColor('secondary');
         text-align: center;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 30px;
-        letter-spacing: 0.96px;
+        @include font(700, 16px, 30px, 0.96px);
         margin: 0 120px 0;
         cursor: pointer;
     }
@@ -148,10 +131,8 @@
     &__title{
         color: getColor('primary');
         text-align: center;
-        font-size: 20px;
-        font-weight: 700;
-        letter-spacing: 0.6px;
         margin-bottom: 12px;
+        @include font(700, 20px, normal, 0.6px);
     }
 }
 
@@ -164,9 +145,7 @@
         display: flex;
         flex-direction: column;
         color: getColor('third');
-        font-size: 12px;
-        font-weight: 400;
-        letter-spacing: 0.12px;
+        @include font(400, 12px, normal, 0.12px);
         position: relative;
     }
 
@@ -221,8 +200,6 @@
 
     &::placeholder{
         color: getColor('third');
-        font-size: 12px;
-        font-weight: 400;
-        letter-spacing: 0.12px;
+        @include font(400, 12px, normal, 0.12px);
     }
 }

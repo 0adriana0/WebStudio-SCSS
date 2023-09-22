@@ -4,9 +4,7 @@
     &__title{
         text-align: center;
         margin: 0px 0px 50px;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
+        @include font(700, 36px, 1.16, normal);
     }
 }
 
@@ -38,9 +36,7 @@
         background: rgba(47, 48, 58, 0.80);
         color: getColor('secondary');
         font-family: getFonts('Roboto-font');
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.42px;
+        @include font(700, 14px, normal, 0.42px);
         text-transform: uppercase;
     }
 }

@@ -1,3 +1,9 @@
+.list-links__item, .list-links, .cards-list, .header-list, .header__container, .menu-right, .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 h1,
 h2,
 h3,
@@ -29,29 +35,21 @@ body {
 }
 
 .navigation {
-  display: flex;
   width: 520px;
-  justify-content: space-between;
-  align-items: center;
   padding: 24px 0px;
 }
 
 .menu-right {
-  align-items: center;
   width: 333px;
-  display: flex;
-  justify-content: space-between;
   padding: 0;
 }
 
 .menu-right__link {
-  text-decoration: none;
   color: #757575;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  list-style: none;
 }
 .menu-right__link:hover, .menu-right__link:focus {
   color: #2196F3;
@@ -72,9 +70,6 @@ body {
 .header__container {
   width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
@@ -86,16 +81,12 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #212121;
-  text-decoration: none;
 }
 .logo__web {
   color: #2196F3;
 }
 
 .header-list {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -106,7 +97,7 @@ body {
 .header-list__item {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   position: relative;
 }
@@ -140,7 +131,6 @@ body {
 }
 
 .list-bth {
-  list-style: none;
   display: flex;
   justify-content: center;
 }
@@ -154,9 +144,9 @@ body {
   color: #212121;
   text-align: center;
   font-family: Roboto, sans-serif;
-  font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.48px;
   margin: 0px 8px 0px 0px;
@@ -204,11 +194,8 @@ body {
 }
 
 .cards-list {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   background: #FFF;
-  list-style: none;
 }
 
 .cards-list__item {
@@ -224,9 +211,9 @@ body {
 .box__text {
   color: #FFF;
   font-family: Roboto, sans-serif;
-  font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.54px;
   margin: 0;
@@ -258,7 +245,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #FFF;
-  text-decoration: none;
 }
 
 .footer-content {
@@ -281,7 +267,6 @@ body {
 }
 
 .contact-list {
-  list-style: none;
   padding: 0;
 }
 .contact-list__item {
@@ -292,7 +277,6 @@ body {
   margin: 9px 0px;
 }
 .contact-list a {
-  text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -306,24 +290,19 @@ body {
 .footer-links__title {
   margin-bottom: 20px;
   color: #FFF;
-  font-size: 14px;
-  font-style: normal;
   font-weight: 700;
-  letter-spacing: 0.42px;
+  font-size: 14px;
+  line-height: 0.42px;
+  letter-spacing: normal;
+  font-style: normal;
   text-transform: uppercase;
 }
 
-.list-links {
-  display: flex;
-  justify-content: space-between;
-}
 .list-links__item {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1019607843);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
   justify-content: center;
 }
 .list-links__item:nth-child(-n+3) {
@@ -351,8 +330,8 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: #FFF;
   text-align: center;
-  font-size: 16px;
   font-weight: 700;
+  font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.96px;
   display: flex;
@@ -386,8 +365,9 @@ body {
 }
 .footer-form__label {
   color: #FFF;
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
+  line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }

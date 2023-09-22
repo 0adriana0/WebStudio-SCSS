@@ -5,12 +5,8 @@
 
     &__logo {
         font-family: getFonts('Raleway-font');
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 1.19;
-        letter-spacing: 0.03em;
+        @include font(700, 26px, 1.19, 0.03em);
         color: getColor('secondary');
-        text-decoration: none;
     }
 }
 
@@ -26,16 +22,12 @@
         width: 231px;
         height: 21px;
         margin-top: 20px;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
+        @include font(400, 14px, 1.71, 0.03em);
         color: getColor('secondary');
     }
 }
 
 .contact-list {
-    list-style: none;
     padding: 0;
 
     &__item {
@@ -48,11 +40,7 @@
     }
 
     & a {
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.71;
-        letter-spacing: 0.03em;
+        @include font(400, 14px, 1.71, 0.03em);
         color: getColor('fourth');
     }
 }
@@ -63,25 +51,21 @@
     &__title {
         margin-bottom: 20px;
         color: getColor('secondary');
-        font-size: 14px;
+        @include font(700, 14px, 0.42px, normal);
         font-style: normal;
-        font-weight: 700;
-        letter-spacing: 0.42px;
         text-transform: uppercase;
     }
 }
 
 .list-links {
-    display: flex;
-    justify-content: space-between;
+    @extend %flex;
 
     &__item {
         width: 44px;
         height: 44px;
         background-color: getColor('sixth');
         border-radius: 50%;
-        display: flex;
-        align-items: center;
+        @extend %flex;
         justify-content: center;
 
         &:nth-child(-n+3) {
@@ -114,10 +98,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: getColor('secondary');
     text-align: center;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.96px;
+    @include font(700, 16px, 30px, 00.96px);
     display: flex;
     align-items: center;
     margin-left: 12px;
@@ -152,9 +133,7 @@
 
     &__label {
         color: #FFF;
-        font-size: 14px;
-        font-weight: 700;
-        letter-spacing: 0.42px;
+        @include font(700, 14px, normal, 00.42px);
         text-transform: uppercase;
     }
 

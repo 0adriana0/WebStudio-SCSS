@@ -1,27 +1,18 @@
 .navigation {
-    display: flex;
+    @extend %flex;
     width: 520px;
-    justify-content: space-between;
-    align-items: center;
     padding: 24px 0px;
 }
 
 .menu-right {
-    align-items: center;
+    @extend %flex;
     width: 333px;
-    display: flex;
-    justify-content: space-between;
     padding: 0;
 }
 
 .menu-right__link {
-    text-decoration: none;
-    color: #757575;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    list-style: none;
+    color: getColor('third');
+    @include font(500, 14px, 1.14, 0.02em);
 
     &:hover, &:focus{
         color: getColor('hover');
@@ -44,9 +35,7 @@
     &__container{
         width: 1200px;
         margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @extend %flex;
     }
 }
 
@@ -54,12 +43,8 @@
     width: 145px;
     height: 31px;
     font-family: getFonts('Raleway-font');
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+    @include font(700, 26px, 1.19, 0.03em);
     color: getColor('primary');
-    text-decoration: none;
 
     &__web{
         color: getColor('hover');
@@ -67,21 +52,13 @@
 }
 
 .header-list {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    @extend %flex;
+    @include font(500, 14px, 1.14, 0.02em);
     color: getColor('primary');
     width: 281px;
 
     &__item{
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1, 14;
-        letter-spacing: 0.02em;
+        @include font(500, 14px, 1.14, 0.02em);
         position: relative;
     }
 }

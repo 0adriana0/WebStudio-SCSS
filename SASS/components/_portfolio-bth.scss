@@ -3,7 +3,6 @@
 }
 
 .list-bth {
-    list-style: none;
     display: flex;
     justify-content: center;
 }
@@ -18,11 +17,8 @@
     color: getColor('primary');
     text-align: center;
     font-family: getFonts('Roboto-font');
-    font-size: 16px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0.48px;
+    @include font(500, 16px, 26px, 0.48px);
     margin: 0px 8px 0px 0px;
     cursor: pointer;
 }
