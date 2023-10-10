@@ -40,3 +40,15 @@
         text-transform: uppercase;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .electricity {
+        padding: 0 15px 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .electricity{
+        display: none;
+    }
+}

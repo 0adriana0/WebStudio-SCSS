@@ -126,6 +126,60 @@ body {
   top: 45px;
 }
 
+@media screen and (max-width: 1200px) {
+  .header__container {
+    width: 1200px;
+    height: 80px;
+  }
+  .menu-right {
+    display: flex;
+    margin-right: 10px;
+  }
+  .logo {
+    width: 134px;
+    margin: 0 88px 0 10px;
+  }
+  .logo__web {
+    width: 54px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__container {
+    width: 768px;
+    height: 80px;
+  }
+  .menu-right {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 74px;
+  }
+  .menu-right__link:nth-child(2) {
+    margin-top: 10px;
+    width: 130px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .menu-right__link:nth-child(1) {
+    width: 141px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .menu-right__icon {
+    width: 14px;
+    margin-right: 8px;
+  }
+  .menu-right .logo {
+    width: 134px;
+    margin: 0 88px 0 15px;
+  }
+  .menu-right .logo__web {
+    width: 54px;
+  }
+}
 .section-bth {
   margin: 94px 0px 50px;
 }
@@ -386,4 +440,10 @@ body {
   margin-left: 10px;
   width: 24px;
   height: 24px;
+}
+
+@media screen and (max-width: 1200) {
+  .footer {
+    width: 1200px;
+  }
 }/*# sourceMappingURL=portfolio.css.map */

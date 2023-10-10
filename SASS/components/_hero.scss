@@ -203,3 +203,107 @@
         @include font(400, 12px, normal, 0.12px);
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .hero {
+        width: 1200px;
+        padding: 200px;
+
+        &__title {
+            @include font(900, 35px, 1.36, 0.06em);
+        }
+
+        &__btn {
+            width: 200px;
+        }
+    }
+
+    .backdrop {
+        width: 1200px;
+    }
+
+    .hero-modal {
+        width: 450px;
+        height: 609px;
+
+        &__text {
+            margin: 20px 0 30px 0;
+            width: 346px;
+            height: 14px;
+            @include font(400, 12px, 1.14, 0.02em);
+        }
+
+        &__link {
+            margin: 20px 0 30px 0;
+            @include font(400, 12px, 1.14, 0.02em);
+            width: 346px;
+            height: 14px;
+        }
+
+        &__submit {
+            margin: 0 105px;
+        }
+    }
+
+    .modal-list {
+        &__input {
+            width: 370px;
+            height: 40px;
+        }
+
+        &__textarea {
+            width: 370px;
+            height: 120px;
+            padding: 12px 16px;
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .hero{
+        width: 768px;
+        padding: 118px;
+        &__title{
+            @include font(900, 26px, 1.36, 0.06em);
+        }
+        &__btn{
+            width: 200px;
+        }
+    }
+    .backdrop{
+        width: 768px;
+    }
+    .hero-modal{
+        width: 450px;
+        height: 609px;
+        &__text {
+            margin: 20px 0 30px 0;
+            width: 346px;
+            height: 14px;
+            @include font(400, 12px, 1.14, 0.02em);
+        }
+        &__link{
+            margin: 20px 0 30px 0;
+            @include font(400, 12px, 1.14, 0.02em);
+            width: 346px;
+            height: 14px;
+        }
+        &__submit{
+            margin: 0 105px;
+        }
+    }
+    .modal-list{
+        &__input{
+            width: 370px;
+            height: 40px;
+        }
+        &__textarea{
+            width: 370px;
+            height: 120px;
+            padding: 12px 16px;
+        }
+        
+    }
+}

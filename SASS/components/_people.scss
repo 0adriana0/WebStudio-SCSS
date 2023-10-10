@@ -79,3 +79,41 @@
         transition: 0.3s ease;
     }
 }
+
+@media screen and (max-width: 1200px){
+    .people{
+        width: 1200px;
+        padding: 94px 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .people{
+        width: 768px;
+        margin-top: 60px;
+        padding: 60px 15px;
+        &__title{
+            width: 205px;
+            height: 33px;
+            @include font(700, 28px, 1.16, normal);
+            margin: 0 277px 30px;
+        }
+    }
+    .people-list{
+        justify-content: start;
+        width: 768px;
+        display: flex;
+        flex-wrap: wrap;
+    &__item{
+        width: 354px;
+        height: 536px;
+        &:nth-child(-n+2){
+            margin-bottom: 30px;
+        }
+    }
+    &__photo{
+        width: 356px;
+        height: 374px;
+    }
+    }
+}
