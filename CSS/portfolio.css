@@ -296,7 +296,7 @@ body {
 }
 
 .footer {
-  padding: 60px 0;
+  padding: 60px 215px;
   background-color: #2F303A;
   height: 252px;
 }
@@ -460,8 +460,10 @@ body {
 @media screen and (max-width: 768px) {
   .footer {
     width: 768px;
+    height: 463px;
     display: flex;
     flex-wrap: wrap;
+    padding: 60px 0 0;
   }
   .footer-contact {
     margin: 0 165px 0 76px;
@@ -477,12 +479,26 @@ body {
     width: 146px;
     height: 16px;
   }
+  .footer-contact {
+    width: 232px;
+    height: 127px;
+  }
+  .footer-links {
+    width: 206px;
+    height: 80px;
+  }
+  .footer-content {
+    width: 768px;
+    height: 463px;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (max-width: 480px) {
   .footer {
     width: 480px;
     height: 603px;
     flex-wrap: nowrap;
+    padding: 60px 0;
   }
   .footer-links {
     width: 206px;

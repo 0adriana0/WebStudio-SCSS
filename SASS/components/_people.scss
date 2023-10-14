@@ -23,6 +23,7 @@
         &:nth-child(-n+3) {
             margin-right: 30px;
         }
+
     }
 
     &__photo {
@@ -91,7 +92,7 @@
     .people{
         width: 768px;
         margin-top: 60px;
-        padding: 60px 15px;
+        padding: 60px 0;
         &__title{
             width: 205px;
             height: 33px;
@@ -100,7 +101,7 @@
         }
     }
     .people-list{
-        justify-content: flex-start;
+        justify-content: center;
         width: 768px;
         display: flex;
         flex-wrap: wrap;
@@ -109,6 +110,9 @@
         height: 536px;
         &:nth-child(-n+2){
             margin-bottom: 30px;
+        }
+        &:nth-child(2){
+            margin: 0 0 30px;
         }
     }
     &__photo{

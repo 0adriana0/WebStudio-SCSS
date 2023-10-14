@@ -1,5 +1,5 @@
 .footer {
-    padding: 60px 0;
+    padding: 60px 215px;
     background-color: getColor('footer');
     height: 252px;
 
@@ -167,8 +167,10 @@
 @media screen and (max-width: 768px) {
     .footer{
         width: 768px;
+        height: 463px;
         display: flex;
         flex-wrap: wrap;
+        padding: 60px 0 0;
         &-contact{
             margin: 0 165px 0 76px;
             text-align: center;
@@ -183,7 +185,21 @@
                 height: 16px;
             }
         }
+        &-contact {
+            width: 232px;
+            height: 127px;
+        }
+        &-links {
+            width: 206px;
+            height: 80px;
+        }
+        &-content {
+            width: 768px;
+            height: 463px;
+            flex-wrap: wrap;
+        }
     }
+    
 }
 
 @media screen and (max-width: 480px){
@@ -191,7 +207,7 @@
         width: 480px;
         height: 603px;
         flex-wrap: nowrap;
-        // padding: 0;
+        padding: 60px 0;
 
         &-links{
             width: 206px;
