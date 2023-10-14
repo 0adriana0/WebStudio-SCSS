@@ -451,6 +451,7 @@ body {
 @media screen and (max-width: 1200px) {
   .footer {
     width: 1200px;
+    padding: 60px 0;
   }
   .footer-content {
     display: flex;
