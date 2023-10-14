@@ -263,6 +263,10 @@
 
 @media screen and (max-width: 768px){
     .hero{
+        background-color: getColor('background');
+        padding: 200px 0;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../Image/tablet.png");
+        background-size: cover;
         width: 768px;
         padding: 118px;
         &__title{
@@ -305,5 +309,17 @@
             padding: 12px 16px;
         }
         
+    }
+}
+
+@media screen and (max-width: 480px){
+    .hero{
+        width: 480px;
+        height: 400px;
+        padding: 0;
+        background-color: getColor('background');
+        padding: 200px 0;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../Image/mobile.png");
+        background-size: cover;
     }
 }
