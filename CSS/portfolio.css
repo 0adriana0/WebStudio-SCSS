@@ -444,7 +444,7 @@ body {
   padding: 15px 0 15px 16px;
   margin-top: 20px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   .footer-form__email {
     width: 450px;
   }
@@ -484,6 +484,7 @@ body {
   }
   .footer-form__label {
     display: block;
+    text-align: center;
   }
   .footer-contact {
     margin: 0 165px 0 76px;
@@ -512,28 +513,29 @@ body {
     height: 463px;
     flex-wrap: wrap;
   }
+  .subscribe {
+    margin: 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .footer {
     width: 480px;
-    height: 603px;
     flex-wrap: nowrap;
     padding: 60px 0;
   }
   .footer-links {
     width: 206px;
     height: 80px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
   }
   .footer-content {
     width: 480px;
-    height: 603px;
     flex-wrap: wrap;
   }
   .footer-contact {
     width: 232px;
     height: 127px;
-    margin: 0 124px;
+    margin: 0 124px 60px;
   }
   .subscribe {
     margin: 0;

@@ -147,7 +147,7 @@
         color: getColor('secondary');
         padding: 15px 0 15px 16px;
         margin-top: 20px;
-        @media screen and (max-width: 1200px) {
+        @media screen and (max-width: 768px) {
             width: 450px;
         }
         @media screen and (max-width: 480px) {
@@ -187,6 +187,7 @@
 
             &__label{
                 display: block;
+                text-align: center;
             }
         }
         &-contact{
@@ -216,6 +217,10 @@
             height: 463px;
             flex-wrap: wrap;
         }
+        
+    }
+    .subscribe{
+        margin: 0;
     }
     
 }
@@ -223,26 +228,24 @@
 @media screen and (max-width: 480px){
     .footer{
         width: 480px;
-        height: 603px;
         flex-wrap: nowrap;
         padding: 60px 0;
 
         &-links{
             width: 206px;
             height: 80px;
-            margin: 0 auto;
+            margin: 0 auto 60px;
         }
 
         &-content{
             width: 480px;
-            height: 603px;
             flex-wrap: wrap;
         }
 
         &-contact{
             width: 232px;
             height: 127px;
-            margin: 0 124px;
+            margin: 0 124px 60px;
         }
     }
     .subscribe{
