@@ -44,6 +44,9 @@
 }
 
 .backdrop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -63,9 +66,7 @@
     padding: 40px;
     width: 528px;
     height: 623px;
-    top: 100px;
-    left: 495px;
-    position: fixed;
+    position: relative;
     background-color: getColor('secondary');
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);

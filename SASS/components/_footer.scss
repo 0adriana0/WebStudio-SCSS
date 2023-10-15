@@ -1,7 +1,6 @@
 .footer {
     padding: 60px 215px;
     background-color: getColor('footer');
-    height: 252px;
 
     &__logo {
         font-family: getFonts('Raleway-font');
@@ -128,11 +127,14 @@
 .footer-form {
     display: flex;
     align-items: flex-end;
+    width: 100%;
+    min-width: 320px;
 
     &__label {
         color: #FFF;
         @include font(700, 14px, normal, 00.42px);
         text-transform: uppercase;
+        display: block;
     }
 
     &__email {
@@ -145,6 +147,12 @@
         color: getColor('secondary');
         padding: 15px 0 15px 16px;
         margin-top: 20px;
+        @media screen and (max-width: 1200px) {
+            width: 450px;
+        }
+        @media screen and (max-width: 480px) {
+            width: 100%;
+        }
     }
 
     &__svg {
@@ -168,10 +176,19 @@
 @media screen and (max-width: 768px) {
     .footer{
         width: 768px;
-        height: 463px;
         display: flex;
         flex-wrap: wrap;
         padding: 60px 0 0;
+        &-form{
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            
+
+            &__label{
+                display: block;
+            }
+        }
         &-contact{
             margin: 0 165px 0 76px;
             text-align: center;

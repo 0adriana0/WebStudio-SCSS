@@ -298,7 +298,6 @@ body {
 .footer {
   padding: 60px 215px;
   background-color: #2F303A;
-  height: 252px;
 }
 .footer__logo {
   font-family: Raleway, sans-serif;
@@ -422,6 +421,8 @@ body {
 .footer-form {
   display: flex;
   align-items: flex-end;
+  width: 100%;
+  min-width: 320px;
 }
 .footer-form__label {
   color: #FFF;
@@ -430,6 +431,7 @@ body {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  display: block;
 }
 .footer-form__email {
   width: 358px;
@@ -441,6 +443,16 @@ body {
   color: #FFF;
   padding: 15px 0 15px 16px;
   margin-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .footer-form__email {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer-form__email {
+    width: 100%;
+  }
 }
 .footer-form__svg {
   margin-left: 10px;
@@ -461,10 +473,17 @@ body {
 @media screen and (max-width: 768px) {
   .footer {
     width: 768px;
-    height: 463px;
     display: flex;
     flex-wrap: wrap;
     padding: 60px 0 0;
+  }
+  .footer-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer-form__label {
+    display: block;
   }
   .footer-contact {
     margin: 0 165px 0 76px;

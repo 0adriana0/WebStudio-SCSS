@@ -239,6 +239,9 @@ body {
   }
 }
 .backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -258,9 +261,7 @@ body {
   padding: 40px;
   width: 528px;
   height: 623px;
-  top: 100px;
-  left: 495px;
-  position: fixed;
+  position: relative;
   background-color: #FFF;
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
@@ -943,7 +944,6 @@ body {
 .footer {
   padding: 60px 215px;
   background-color: #2F303A;
-  height: 252px;
 }
 .footer__logo {
   font-family: Raleway, sans-serif;
@@ -1067,6 +1067,8 @@ body {
 .footer-form {
   display: flex;
   align-items: flex-end;
+  width: 100%;
+  min-width: 320px;
 }
 .footer-form__label {
   color: #FFF;
@@ -1075,6 +1077,7 @@ body {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  display: block;
 }
 .footer-form__email {
   width: 358px;
@@ -1086,6 +1089,16 @@ body {
   color: #FFF;
   padding: 15px 0 15px 16px;
   margin-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .footer-form__email {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer-form__email {
+    width: 100%;
+  }
 }
 .footer-form__svg {
   margin-left: 10px;
@@ -1106,10 +1119,17 @@ body {
 @media screen and (max-width: 768px) {
   .footer {
     width: 768px;
-    height: 463px;
     display: flex;
     flex-wrap: wrap;
     padding: 60px 0 0;
+  }
+  .footer-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer-form__label {
+    display: block;
   }
   .footer-contact {
     margin: 0 165px 0 76px;
