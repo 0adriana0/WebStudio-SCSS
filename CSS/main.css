@@ -39,6 +39,16 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .contanier {
+    width: 768px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .contanier {
+    width: 480px;
+  }
+}
 
 .navigation {
   width: 520px;
@@ -412,7 +422,7 @@ body {
 
 @media screen and (max-width: 1200px) {
   .hero {
-    width: 1200px;
+    width: 100%;
     padding: 200px;
   }
   .hero__title {
