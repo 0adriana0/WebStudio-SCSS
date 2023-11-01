@@ -69,6 +69,15 @@ body {
   transition: 0.2s ease;
 }
 
+.nav-menu {
+  display: none;
+}
+
+input,
+label {
+  display: none;
+}
+
 .menu-right__icon {
   fill: #757575;
   margin-right: 10px;
@@ -144,9 +153,6 @@ body {
     height: 80px;
     border-bottom: 1px solid #bbbbbb;
   }
-  .navigation__svg {
-    display: none;
-  }
   .menu-right {
     display: flex;
     margin-right: 10px;
@@ -218,6 +224,76 @@ body {
     display: block;
     width: 40px;
     height: 40px;
+  }
+  .nav-menu {
+    display: block;
+  }
+  label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+  }
+  label span,
+  label span::before,
+  label span::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    transition: transform 0.3s linear;
+  }
+  label span::before {
+    top: -8px;
+  }
+  label span::after {
+    top: 8px;
+  }
+  label span {
+    top: 15px;
+  }
+  .nav-menu {
+    display: none;
+  }
+  input[type=checkbox]:checked ~ .nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .nav-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 480px;
+    background-color: #fff;
+    z-index: 99;
+    padding: 48px 40px;
+  }
+  .nav-menu__link {
+    color: #212121;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+  .nav-menu__item {
+    margin: 15px 0;
+  }
+  input[type=checkbox]:checked ~ label span {
+    transform: rotate(-45deg);
+  }
+  input[type=checkbox]:checked ~ label span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  input[type=checkbox]:checked ~ label span::after {
+    top: 0;
+    transform: rotate(90deg);
   }
 }
 .section-bth {
