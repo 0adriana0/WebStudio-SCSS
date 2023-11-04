@@ -231,7 +231,7 @@ label {
   }
   .navigation {
     padding: 10px 0;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 190px;
   }
   .navigation__svg {
