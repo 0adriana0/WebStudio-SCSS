@@ -258,6 +258,7 @@ label {
     z-index: 99;
     background: #FFF;
     width: 480px;
+    height: 100%;
     padding: 48px 40px;
   }
   .header-form-button {
