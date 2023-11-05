@@ -73,11 +73,6 @@ body {
   display: none;
 }
 
-input,
-label {
-  display: none;
-}
-
 .menu-right__icon {
   fill: #757575;
   margin-right: 10px;
@@ -260,6 +255,7 @@ label {
     width: 480px;
     height: 100%;
     padding: 48px 40px;
+    overflow: auto;
   }
   .header-form-button {
     position: absolute;

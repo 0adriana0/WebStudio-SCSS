@@ -226,6 +226,7 @@
     .hero-modal {
         width: 450px;
         height: 609px;
+        overflow: auto;
 
         &__text {
             margin: 20px 0 30px 0;
