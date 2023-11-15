@@ -340,6 +340,11 @@ body {
   padding: 200px 0;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../Image/Img.jpg");
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Image/desk@2x.png);
+  }
+}
 .hero__title {
   font-weight: 900;
   font-size: 44px;
@@ -613,6 +618,13 @@ body {
     width: 768px;
     padding: 118px;
   }
+}
+@media screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 2dppx), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Image/tablet@2x.jpg);
+  }
+}
+@media screen and (max-width: 768px) {
   .hero__title {
     font-weight: 900;
     font-size: 26px;
@@ -668,6 +680,13 @@ body {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../Image/mobile.png");
     background-size: cover;
   }
+}
+@media screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 2dppx), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-device-pixel-ratio: 2) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Image/mobile@2x.jpg);
+  }
+}
+@media screen and (max-width: 480px) {
   .backdrop {
     width: 480px;
   }
@@ -800,6 +819,21 @@ body {
   height: 294px;
   position: relative;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .electricity-list__thumb--1 {
+    background-image: url(../Image/img1@2x.jpg);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .electricity-list__thumb--2 {
+    background-image: url(../Image/img2@2x.jpg);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .electricity-list__thumb--3 {
+    background-image: url(../Image/img3@2x.jpg);
+  }
+}
 .electricity-list__img {
   -o-object-position: 100%;
      object-position: 100%;
@@ -864,6 +898,26 @@ body {
   background: #FFF;
   width: 270px;
   height: 260px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .people-list__photo--1 {
+    background-image: url(../../Image/people1@2x.jpg);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .people-list__photo--2 {
+    background-image: url(../Image/people2@2x.jpg);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .people-list__photo--3 {
+    background-image: url(../Image/people3@2x.jpg);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .people-list__photo--4 {
+    background-image: url(../Image/people4@2x.jpg);
+  }
 }
 .people-list__name {
   text-align: center;

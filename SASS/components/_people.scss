@@ -1,3 +1,4 @@
+
 .people {
     background-color: getColor('fifth');
     padding: 94px;
@@ -30,6 +31,42 @@
         background: getColor('secondary');
         width: 270px;
         height: 260px;
+        &--1 {
+            @media(-webkit-min-device-pixel-ratio: 2),
+                (-o-min-device-pixel-ratio: 2/1),
+                (min-resolution: 2dppx),
+                (min-resolution: 192dpi),
+                (min-device-pixel-ratio: 2) {
+                    background-image: url(../../Image/people1@2x.jpg);
+                }
+        }
+        &--2 {
+        @media(-webkit-min-device-pixel-ratio: 2),
+            (-o-min-device-pixel-ratio: 2/1),
+            (min-resolution: 2dppx),
+            (min-resolution: 192dpi),
+            (min-device-pixel-ratio: 2) {
+                background-image: url(../Image/people2@2x.jpg);
+            }
+        }
+        &--3 {
+        @media(-webkit-min-device-pixel-ratio: 2),
+            (-o-min-device-pixel-ratio: 2/1),
+            (min-resolution: 2dppx),
+            (min-resolution: 192dpi),
+            (min-device-pixel-ratio: 2) {
+                background-image: url(../Image/people3@2x.jpg);
+            }
+        }
+        &--4 {
+        @media(-webkit-min-device-pixel-ratio: 2),
+            (-o-min-device-pixel-ratio: 2/1),
+            (min-resolution: 2dppx),
+            (min-resolution: 192dpi),
+            (min-device-pixel-ratio: 2) {
+                background-image: url(../Image/people4@2x.jpg);
+            }
+        }
     }
 
     &__name {

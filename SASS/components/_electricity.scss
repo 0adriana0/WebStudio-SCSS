@@ -1,3 +1,10 @@
+// @media(-webkit-min-device-pixel-ratio: 2),
+// (-o-min-device-pixel-ratio: 2/1),
+// (min-resolution: 2dppx),
+// (min-resolution: 192dpi),
+// (min-device-pixel-ratio: 2) {
+//     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../Image/tablet@2x.jpg);
+// }
 .electricity {
     margin: 94px auto;
 
@@ -20,6 +27,33 @@
         width: 370px;
         height: 294px;
         position: relative;
+        &--1{
+            @media(-webkit-min-device-pixel-ratio: 2),
+                (-o-min-device-pixel-ratio: 2/1),
+                (min-resolution: 2dppx),
+                (min-resolution: 192dpi),
+                (min-device-pixel-ratio: 2) {
+                    background-image: url(../Image/img1@2x.jpg);
+                }
+        }
+        &--2{
+            @media(-webkit-min-device-pixel-ratio: 2),
+                (-o-min-device-pixel-ratio: 2/1),
+                (min-resolution: 2dppx),
+                (min-resolution: 192dpi),
+                (min-device-pixel-ratio: 2) {
+                    background-image: url(../Image/img2@2x.jpg);
+                }
+        }
+        &--3{
+            @media(-webkit-min-device-pixel-ratio: 2),
+                (-o-min-device-pixel-ratio: 2/1),
+                (min-resolution: 2dppx),
+                (min-resolution: 192dpi),
+                (min-device-pixel-ratio: 2) {
+                    background-image: url(../Image/img3@2x.jpg);
+                }
+        }
     }
 
     &__img {

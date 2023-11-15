@@ -455,6 +455,52 @@ body {
   transform: translatey(0);
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .cards-list__img--1 {
+    background-image: url(../Image/portfolio1@2x.jpg);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .cards-list__img--2 {
+    background-image: url(../Image/portfolio2@2x.jpg);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .cards-list__img--3 {
+    background-image: url(../Image/portfolio3@2x.jpg);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .cards-list__img--4 {
+    background-image: url(../Image/portfolio4@2x.jpg);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .cards-list__img--5 {
+    background-image: url(../Image/portfolio5@2x.jpg);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .cards-list__img--6 {
+    background-image: url(../Image/portfolio6@2x.jpg);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .cards-list__img--7 {
+    background-image: url(../Image/portfolio7@2x.jpg);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .cards-list__img--8 {
+    background-image: url(../Image/portfolio8@2x.jpg);
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .cards-list__img--9 {
+    background-image: url(../Image/portfolio9@2x.jpg);
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .section-cards {
     width: 1200px;
